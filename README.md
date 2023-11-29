@@ -20,3 +20,23 @@ The program shows how the `midi-writer-js` package can be used to create a music
 
 There is no input and output directly, the user must create their own MIDI NoteEvents in the script.js file in the public folder. The output is created automatically and it is a `dataUri` string that the player reads in in order to play the sounds back.
 
+## Input:
+
+Create a track and change the instrument to a Bass guitar and create one `E4` note with velocity `50`.
+
+```javascript
+  track = new MidiWriter.Track();
+  track.addEvent(new MidiWriter.ProgramChangeEvent({instrument : 24}));
+  track.addEvent(new MidiWriter.NoteEvent({pitch: ['E4'], repeat: 1, duration: '1', velocity:50}));
+```
+
+## Output:
+
+Output is a MIDI Uri:
+
+```data:audio/midi;base64,TVRoZAAAAAYAAAABAIBNVHJrAAAAEADAGACQQECEAIBAQAD/LwA=```
+
+Which can then be fed into the desired MIDI player tool.
+
+
+
