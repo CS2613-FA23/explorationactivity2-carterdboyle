@@ -14,7 +14,7 @@ Open a web browser and navigate to `localhost:5000/` to start the web app.
 
 ## What purpose does the program serve?
 
-The program shows how the midi-writer-js package can be used to create a musical piece using MIDI writing capabilites and how it can be leveraged using javascript and additional packages to create a web app to play it back.
+The program shows how the `midi-writer-js` package can be used to create a musical piece using MIDI writing capabilites and how it can be leveraged using javascript and additional packages to create a web app to play it back.
 
 ## Sample input/output?
 
